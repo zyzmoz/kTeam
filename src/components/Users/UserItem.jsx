@@ -2,7 +2,7 @@ import React from 'react';
 import Octicon, { Pencil, Trashcan } from '@githubprimer/octicons-react';
 import './Users.css';
 
-const UserItem = ({ user }) => {
+const UserItem = ({ user, editUser }) => {
   console.log(user);
   return (
     <tr className="row">
@@ -10,8 +10,8 @@ const UserItem = ({ user }) => {
       <th className="col-4">{user.name}</th>
       <th className="col-2">{user.phone}</th>
       <th className="col-3">{user.email}</th>
-      <th className="col-2">
-        <button className="btn btn-primary small actions">
+      <th className="col-2 actions">
+        <button className="btn btn-primary small ">
           <Octicon icon={Pencil} />
         </button>
         <button className="btn btn-danger small">

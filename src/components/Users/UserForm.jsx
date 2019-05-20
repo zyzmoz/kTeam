@@ -13,6 +13,7 @@ const actions = {
 }
 
 const UserForm = (props) => {
+  const initialData = props.user;
   const handleSubmit = (data, { resetForm }) => {
     console.log(data);
     props.saveUser(data);
@@ -26,7 +27,7 @@ const UserForm = (props) => {
 
   return (
     <div className="form form-view">
-      <Form onSubmit={handleSubmit} >
+      <Form onSubmit={handleSubmit} initialData={initialData} >
         <div className="form-group">
           <label>Nome:</label>
           <Input className="form-control" name="name" />

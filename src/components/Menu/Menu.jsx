@@ -10,6 +10,8 @@ const Menu = (props) => {
       <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <Link to="/" title="Dashboard" pathname={pathname} />
         <Link to="/users" title="Usuários" pathname={pathname} />
+        <Link to="/customers" title="Clientes" pathname={pathname} />
+        <Link to="/apps" title="Sistemas" pathname={pathname} />
       </div>
     </div>
   );
