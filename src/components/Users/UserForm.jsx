@@ -15,6 +15,7 @@ const actions = {
 const UserForm = (props) => {
   const handleSubmit = (data, { resetForm }) => {
     console.log(data);
+    props.saveUser(data);
     props.closeModal();
     resetForm();
   }

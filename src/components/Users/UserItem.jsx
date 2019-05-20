@@ -1,10 +1,24 @@
 import React from 'react';
+import Octicon, { Pencil, Trashcan } from '@githubprimer/octicons-react';
+import './Users.css';
 
-const UserItem = () => {
+const UserItem = ({ user }) => {
+  console.log(user);
   return (
-    <div>
-      
-    </div>
+    <tr className="row">
+      <th className="col-1"></th>
+      <th className="col-4">{user.name}</th>
+      <th className="col-2">{user.phone}</th>
+      <th className="col-3">{user.email}</th>
+      <th className="col-2">
+        <button className="btn btn-primary small actions">
+          <Octicon icon={Pencil} />
+        </button>
+        <button className="btn btn-danger small">
+          <Octicon icon={Trashcan} />
+        </button>
+      </th>
+    </tr>
   );
 };
 

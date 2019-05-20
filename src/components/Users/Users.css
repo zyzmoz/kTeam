@@ -1,3 +1,7 @@
 .form {  
   width: 300px;
 }
+
+.actions button{
+  margin-left: 8px;  
+}
