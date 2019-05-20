@@ -6,12 +6,12 @@ const UserList = (props) => {
 
     <table className="table">
       <thead>
-        <tr>
-          <th className="col">Controle</th>
-          <th className="col">Nome</th>
-          <th className="col">Telefone</th>
-          <th className="col">Email</th>
-          <th className="col">Ações</th>
+        <tr className="row">
+          <th className="col-2">#</th>
+          <th className="col-4">Nome</th>
+          <th className="col-2">Telefone</th>
+          <th className="col-2">Email</th>
+          <th className="col-2">Ações</th>
         </tr>
       </thead>
       <tbody>
