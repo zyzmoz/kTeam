@@ -1,7 +1,7 @@
 import { GET_USERS, QUERY_USERS, SAVE_USER, DELETE_USER } from './consts';
 
 
-const getUsers = () => {
+export const getUsers = () => {
   return async(dispatch) =>{
     dispatch({
       type: GET_USERS
@@ -9,7 +9,7 @@ const getUsers = () => {
   }
 }
 
-const getUser = (id) => {
+export const getUser = (id) => {
   return async(dispatch) =>{
     dispatch({
       type: GET_USER
@@ -17,7 +17,7 @@ const getUser = (id) => {
   }
 }
 
-const queryUsers = (str) => {
+export const queryUsers = (str) => {
   return async(dispatch) =>{
     dispatch({
       type: QUERY_USERS
@@ -25,7 +25,7 @@ const queryUsers = (str) => {
   }
 }
 
-const saveUser = (userObj) => {
+export const saveUser = (userObj) => {
   return async(dispatch) =>{
     dispatch({
       type: SAVE_USER
@@ -33,7 +33,7 @@ const saveUser = (userObj) => {
   }
 }
 
-const deleteUsers = (id) => {
+export const deleteUsers = (id) => {
   return async(dispatch) =>{
     dispatch({
       type: DELETE_USER
@@ -41,10 +41,3 @@ const deleteUsers = (id) => {
   }
 }
 
-export default {
-  getUser,
-  getUsers,
-  saveUser,
-  queryUsers,
-  deleteUsers
-}
